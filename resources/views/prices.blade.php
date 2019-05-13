@@ -14,19 +14,15 @@
     <link href={{ asset('css/bootstrap.min.css')}} rel="stylesheet">
 
     <style>
-        #space1{
-            height: 150px;
-            background-color: #cc0000
-        }
 
+    /*
+      
         #div1{
             padding-left: 150px;
         }
 
 
-        #FirstSection{
-            padding-bottom: 50px;
-        }
+      
 
         #item01{
             margin-bottom: 50px;
@@ -43,40 +39,12 @@
             font-size: 20px;
         }
 
-        #title2{
-            padding-top: 50px;
-        }
 
-        #precios{
-            padding-left: 200px;
-        }
-
-        .price{
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-right: 30px;
-            margin-left: 100px;
-        }
-
-        .title, .price button{
-            color: white;
-        }
-
-        .price h2{
-            padding-top: 10px;
-            padding-bottom: 5px;
-
-        }
-
-        .price h4{
-            padding-top: 20px;
-            padding-bottom: 30px;
-        }
-
-        .price button{
-            background-color: #cc0000;
-        }
-
+   
+        #img21{
+                height: 400px;
+                width: 600px;
+            }
 
 
         @media only screen and (orientation: landscape) {
@@ -104,8 +72,9 @@
                 height: 120px;
             }
 
-            #div1{
-                display: none;
+            #img21{
+                height: 300px;
+                width: 100px;
             }
 
             #precios{
@@ -123,9 +92,7 @@
                     padding-left: 0px;
                 }
 
-                #div1{
-                    display: none;
-                }
+         
             }
 
         }
@@ -165,10 +132,99 @@
                 }
 
             }
+        }*/
+
+
+        #FirstSection{
+            padding-bottom: 150px;
+        }
+
+        #space1{
+            height: 100px;
+            background-color: #cc0000
+        }
+        
+        #item0{
+            padding: 100px 80px 40px 90px;
         }
 
 
+        #title2{
+            padding-top: 50px;
+        }
 
+        #precios{
+            padding-left: 100px;
+        }
+
+        .price{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 30px;
+            margin-left: 50px;
+        }
+
+        .title, .price button{
+            color: white;
+        }
+
+        .price h2{
+            padding-top: 10px;
+            padding-bottom: 5px;
+
+        }
+
+        .price h4{
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+
+        .price button{
+            background-color: #cc0000;
+        }
+
+        
+        @media screen and (max-width: 995px) {
+            #div1{
+                display: none;
+            }
+
+            #text1{
+                padding: 0px 0px 0px 0px;
+            }
+
+            #item0{
+                padding: 100px 80px 40px 90px;
+            }
+
+
+            #img1{
+                margin-left: 0px;
+                margin-right: -30px;
+                padding-top: 80px;
+                padding-bottom: 0px;
+                width: 450px;
+                height: 430px;
+            }
+
+            
+
+
+           
+        }
+
+        @media screen and (max-width: 600px){
+
+            #item0{
+                padding: 90px 20px 30px 20px;
+            }
+
+
+            #text1{
+                padding: 0px 0px 0px 0px;
+                font-size: 20px;
+            }
+        }
 
     </style>
 </head>
@@ -178,22 +234,26 @@
 
 @yield('menu')
 
-<div class="container-fluid">
+
+<div  class="container-fluid">
     <div id="space1" class="row" ></div>
-    <div id="FirstSection" class="row text-white text-center" style="background-color: #cc0000">
-        <div class="col-sm-12 col-md-10 col-lg-6" id="div1">
-            <img src="{{ asset('img/primera.png')}}" class="img-fluid">
+
+    <div id="FisrtSection" class="row text-white text-center" style="background-color: #cc0000">
+        <div class="col-sm-12 col-md-9 col-lg-7" id="div1">
+            <img src="{{ asset('img/precios.png')}}" class="img-fluid">
         </div>
-        <div id="item01" class="col-sm-12 col-md-11 col-lg-6">
+        <div id="item0" class="col-sm-12 col-md-9 col-lg-5">
             <h1>Precios creados para tu empresa.</h1>
             <br><br>
-            <p class="text-justify" id="text21">
-                Selecciona el plan que mas le convenga a tu empresa
+            <p class="text-justify" id="text1">
+            Selecciona el plan que mas le convenga a tu empresa
                 o descrube nuestras opciones de acuerdo a tus necesidades.
             </p>
         </div>
     </div>
 </div>
+
+
 
 
 <div class="container-fluid text-center" style="background-color: whitesmoke">
